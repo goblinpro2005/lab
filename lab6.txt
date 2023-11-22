@@ -1,0 +1,13 @@
+3)/proc/cpuinfo
+  /proc/meminfo
+  /proc/version
+
+4) vmstat 3 30 
+
+5) uptime 15
+
+6) swapon -s
+
+7) free -h
+
+8) df -h
