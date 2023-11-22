@@ -1,0 +1,30 @@
+3)find ~ -type f | wc -l\
+
+4)find ~ \( -not -type l \) -and \( -not -type d \) > filelist1.txt
+
+5)find ~ \( -size +5k \) | xargs ls -l > filelist2.txt
+
+7)locate help | wc -l
+
+9)
+	gzip -c -5 filelist1.txt > filelist1.txt.gz
+	gzip -c -7 filelist1.txt > filelist2.txt.gz
+	gzip -c -3 filelist1.txt > filelist3.txt.gz
+	
+         compressed        uncompressed  ratio uncompressed_name
+                800                2553  69.9% filelist1.txt
+         compressed        uncompressed  ratio uncompressed_name
+                794                2553  70.2% filelist2.txt
+         compressed        uncompressed  ratio uncompressed_name
+                829                2553  68.8% filelist3.txt
+
+10)
+	bzip2 -c -5 filelist1.txt > filelist1.txt.bz2
+	bzip2 -c -9 filelist1.txt > filelist2.txt.bz2
+	bzip2 -c -7 filelist1.txt > filelist3.txt.bz2
+
+11)tar -cvf archive1.tar filelist1.txt filelist2.txt filelist3.txt
+
+12)tar -rvf archive1.tar passwd_example
+
+13)zip archive2.zip filelist1.txt filelist2.txt filelist3.txt passwd_example

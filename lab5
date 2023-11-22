@@ -1,0 +1,11 @@
+3)ps -fu root --sort ppid > proc1
+
+4)ps -u root >> proc1
+
+5)ps aux | head -1;ps aux | sort -rn -k +3 | head 
+
+11)fg bg
+
+12)kill 
+
+13)killall -u root

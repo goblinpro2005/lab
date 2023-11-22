@@ -1,0 +1,97 @@
+4)
+
+.
+├── cat1
+│   ├── cat2
+│   │   ├── cat3
+│   │   │   ├── cat6
+│   │   │   └── cat7
+│   │   └── cat5
+│   ├── cat3
+│   │   └── cat4
+│   └── cat8
+│       └── sim -> cat6
+├── Ghub
+│   └── lab
+│       ├── README.md
+│       ├── git1
+│       └── lab1.txt
+└── lab2
+
+12 directories, 5 files
+
+5)
+
+.
+├── cat1
+│   ├── cat2
+│   │   └── cat5
+│   └── cat8
+│       └── sim -> cat6
+├── Ghub
+│   └── lab
+│       ├── README.md
+│       ├── git1
+│       └── lab1.txt
+└── lab2
+
+7 directories, 5 files
+
+6)
+	cd cat1/cat8
+	rm sim
+7)
+	mkdir dir
+	cd dir
+	touch date
+	date >> date
+8)
+	ln dir/date link1
+9)
+	tree >> lab2
+
+.
+├── cat1
+│   ├── cat2
+│   │   └── cat5
+│   └── cat8
+├── dir
+│   └── date
+├── Ghub
+│   └── lab
+│       ├── README.md
+│       ├── git1
+│       └── lab1.txt
+├── lab2
+└── link1
+
+8 directories, 6 files
+
+10)
+	cd dir
+	mv date current_date
+
+11) 	
+	cd dir
+	cp current_date ~/
+
+12)
+	tree
+	
+.
+├── cat1
+│   ├── cat2
+│   │   └── cat5
+│   └── cat8
+├── current_date
+├── dir
+│   └── current_date
+├── Ghub
+│   └── lab
+│       ├── README.md
+│       ├── git1
+│       └── lab1.txt
+├── lab2
+└── link1
+
+8 directories, 7 files

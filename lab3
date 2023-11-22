@@ -1,0 +1,44 @@
+3)
+	ls -l ~ | sort -n -k 7
+
+4)	
+	cut -d : -f 1 passwd_example >> 1.txt
+	sort -r 1.txt >> cut_result
+5)
+	nano cut_result
+
+6)
+	diff cut_result cut_result2	
+1d0
+< Vladislav 
+3c2,4
+< Nikita 
+---
+> Kirill
+> Evgeniy 
+> Vladislav
+
+7)
+	cat cut_result2 >> cut_result
+1,3d0
+< Vladislav 
+< Vadim 
+< Nikita 
+6c3
+< Evgeniy
+---
+> Evgeniy 
+
+8)
+	cat cut_result | sort | uniq >> 2.txt
+	> cut result
+	cat 2.txt >> cut_result
+
+10)
+	env
+
+12)
+	PS1="\[\033[0;41m\]<>\$\[\033[0m\]" 
+
+13)
+	PS1="\[\033[0;41m\]<\u@\h \W>\$\[\033[0m\]"

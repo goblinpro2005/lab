@@ -1,0 +1,19 @@
+2)
+	touch script.txt
+	bash script.txt
+	x=1
+	y=1
+	read -p "X="
+	X=7
+	read -p "Y="
+	Y=-4
+	add=$(($x + $y))
+	if [ $add -lt 0 ]; then echo "chislo "$add" menshe 0"; elif [ $add -gt 0]; then echo "chislo " $add " =0"; fi
+
+3)
+	touch script2.txt
+	bash script2.txt
+	x="root"
+	y='date +%H_%M_%S'
+	find ~ \( -name "*.txt" \) -and \( -type f \) | xargs tar -cvf "$x.tar"
+	mv $x.tar $x$y.tar
